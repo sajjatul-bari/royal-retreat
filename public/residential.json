@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "estate_title": "Modern Family Home",
+    "segment_name": "Family",
+    "description": "A spacious family home with modern amenities and a beautiful garden.",
+    "price": "$500,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "123 Maple Street, Springfield",
+    "image": "https://i.ibb.co.com/Q8fWRdq/house.jpg",
+    "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
+    "number_of_bedrooms": 4,
+    "number_of_bathrooms": 3,
+    "year_built": 2020,
+    "agent_contact": "agent1@example.com",
+    "view_property_url": "/properties/1"
+  },
+  {
+    "id": 2,
+    "estate_title": "Downtown Apartment",
+    "segment_name": "Urban",
+    "description": "A chic apartment located in the heart of the city with stunning skyline views.",
+    "price": "$2,500/month",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "456 Elm Street, Metropolis",
+    "image": "https://i.ibb.co.com/yd8tHjR/townhouse.jpg",
+    "facilities": ["Balcony", "Gym", "24/7 Security"],
+    "number_of_bedrooms": 2,
+    "number_of_bathrooms": 2,
+    "year_built": 2018,
+    "agent_contact": "agent2@example.com",
+    "view_property_url": "/properties/2"
+  },
+  {
+    "id": 3,
+    "estate_title": "Cozy Cottage",
+    "segment_name": "Countryside",
+    "description": "A charming cottage surrounded by nature, perfect for a peaceful retreat.",
+    "price": "$350,000",
+    "status": "sale",
+    "area": "1800 sq ft",
+    "location": "789 Pine Lane, Greenfield",
+    "image": "https://i.ibb.co.com/kg9cYzs/apartment.jpg",
+    "facilities": ["Fireplace", "Deck", "Private Garden"],
+    "number_of_bedrooms": 3,
+    "number_of_bathrooms": 2,
+    "year_built": 2015,
+    "agent_contact": "agent3@example.com",
+    "view_property_url": "/properties/3"
+  }
+]
