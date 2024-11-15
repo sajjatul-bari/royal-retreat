@@ -47,7 +47,7 @@ const Login = () => {
       });
   };
   return (
-    <div className="py-10">
+    <div className="pt-36 py-10">
       <h1 className="text-center text-2xl">Please Login</h1>
       <div className="hero">
         <div className="hero-content  lg:w-1/2">
@@ -83,7 +83,9 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn rounded-xl bg-green-900 hover:bg-transparent border hover:border-green-900 text-white hover:text-green-900 ">
+                  Login
+                </button>
               </div>
             </form>
             <span className="text-center">

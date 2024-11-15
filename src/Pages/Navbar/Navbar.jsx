@@ -69,7 +69,7 @@ const Navbar = () => {
           <img className="h-24 " src="/logo.png" alt="" />
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex bg-[#00000069] rounded-xl px-1">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
@@ -107,7 +107,7 @@ const Navbar = () => {
           </div>
         ) : (
           <Link to="/login">
-            <button className="btn bg-[#1d4734] text-white border-green-900">
+            <button className="btn px-8  bg-[#1d4734] text-white border-green-900">
               Login
             </button>
           </Link>

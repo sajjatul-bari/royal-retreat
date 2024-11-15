@@ -51,7 +51,7 @@ const Slider = () => {
                 and functional open-plan layout.
               </p>
               <Link to="/category/1">
-                <button className="btn mt-10 bg-green-900 border-green-900 text-white hover:text-green-900">
+                <button className="btn mt-10  bg-green-900 border-green-900 text-white hover:text-green-900">
                   More Details
                 </button>
               </Link>
