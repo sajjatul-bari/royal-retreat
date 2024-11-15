@@ -1,0 +1,13 @@
+.nav-link.active {
+  background-color: #14532d !important; /* Green background */
+  color: white !important; /* Black text color */
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background-color: #14532d;
+}

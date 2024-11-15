@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import "../Navbar/Navbar.css";
 
 const Navbar = () => {
   const { user, LogOut } = useContext(AuthContext);
@@ -10,18 +11,37 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          to="/"
+          exact
+          activeClassName="nav-link-active"
+          className="nav-link"
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/about">About</NavLink>
+        <NavLink
+          to="/about"
+          activeClassName="nav-link-active"
+          className="nav-link"
+        >
+          About
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink
+          to="/contact"
+          activeClassName="nav-link-active"
+          className="nav-link"
+        >
+          Contact
+        </NavLink>
       </li>
     </>
   );
   return (
-    <div className="navbar absolute bg-transparent z-10 text-white font-semibold px-5">
+    <div className="navbar absolute bg-transparent z-10 text-white font-semibold px-10 py-3">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +66,7 @@ const Navbar = () => {
           ></ul>
         </div>
         <Link to="/">
-          <img className="h-20" src="/logo.png" alt="" />
+          <img className="h-24 " src="/logo.png" alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -87,7 +107,9 @@ const Navbar = () => {
           </div>
         ) : (
           <Link to="/login">
-            <button className="btn bg-[#1d4734] text-white border-green-900">Login</button>
+            <button className="btn bg-[#1d4734] text-white border-green-900">
+              Login
+            </button>
           </Link>
         )}
       </div>
