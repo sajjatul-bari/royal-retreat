@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaLocationDot, FaBuilding } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import { Helmet } from "react-helmet-async";
 
 const CategoryDetails = () => {
   const { id } = useParams();
@@ -33,6 +34,9 @@ const CategoryDetails = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{estate_title} - Royal Retreat</title>
+      </Helmet>
       <div
         className="relative pt-52 pb-24"
         style={{
@@ -67,7 +71,6 @@ const CategoryDetails = () => {
             </p>
           </div>
           <p>
-            
             <span className="font-bold">Area</span> : {area}
           </p>
           <p>

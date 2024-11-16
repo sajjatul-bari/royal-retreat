@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import {
   IoCall,
   IoLocation,
@@ -12,6 +13,9 @@ import {
 const ContactUs = () => {
   return (
     <div>
+      <Helmet>
+        <title>Contact Us - Royal Retreat</title>
+      </Helmet>
       <div
         className="relative  text-white flex items-center justify-center pt-52 pb-24 "
         style={{

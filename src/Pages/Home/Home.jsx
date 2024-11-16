@@ -5,6 +5,7 @@ import Hidden from "./Hidden/Hidden";
 import Testimonial from "./Testimonial/Testimonial";
 import AboutInfo from "./AboutInfo/AboutInfo";
 import ContactDetails from "../ContactDetails/ContactDetails";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const residential = useLoaderData();
@@ -12,12 +13,15 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Royal Retreat</title>
+      </Helmet>
       <Slider></Slider>
       <AboutInfo></AboutInfo>
       <div className="mt-32">
         <div className="text-center mb-10">
-          <h1 className="text-xl font-bold">Our Services</h1>
-          <h3 className="text-5xl font-bold">
+          <h1 className="text-xl font-bold animate__animated animate__bounceIn">Our Services</h1>
+          <h3 className="text-5xl font-bold nimate__animated animate__bounceIn">
             Ensuring a seamless experience from start to finish
           </h3>
         </div>

@@ -26,7 +26,7 @@ const Navbar = () => {
           activeClassName="nav-link-active"
           className="nav-link"
         >
-          About
+          About Us
         </NavLink>
       </li>
       <li>
@@ -35,7 +35,7 @@ const Navbar = () => {
           activeClassName="nav-link-active"
           className="nav-link"
         >
-          Contact
+          Contact Us
         </NavLink>
       </li>
     </>

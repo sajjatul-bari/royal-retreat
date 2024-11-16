@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import 'animate.css';
+
 
 const AboutInfo = () => {
   return (
     <div className=" my-10 mx-10">
       <div className="my-20 text-center">
-        <h1 className="text-xl font-bold">About Us</h1>
-        <h3 className="text-5xl font-bold">Where dream homes become reality</h3>
+        <h1 className="text-xl font-bold animate__animated animate__backInRight">About Us</h1>
+        <h3 className="text-5xl font-bold animate__animated animate__backInLeft">Where dream homes become reality</h3>
       </div>
       <div className="flex justify-center gap-10">
         <div className="w-1/2">
