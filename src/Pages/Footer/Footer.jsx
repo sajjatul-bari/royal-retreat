@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
       </footer>
       <footer className=" text-center bg-green-900 text-white px-10 py-5">
-        <h3 className="lg:text-lg text-sm">©2024. Royal Retreat. All Rights Reserved.</h3>
+        <h3 className="lg:text-lg text-sm font-montserrat">©2024. Royal Retreat. All Rights Reserved.</h3>
       </footer>
     </div>
   );

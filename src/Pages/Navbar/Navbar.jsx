@@ -44,7 +44,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar absolute bg-transparent z-10 text-white font-semibold lg:px-10 px-3 py-3">
+    <div className="navbar absolute bg-transparent z-10 text-white font-semibold lg:px-10 px-3 py-3 font-montserrat">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -95,26 +95,30 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-[#1d4734] rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-[#00000069] rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link to="/profile">
+                <NavLink
+                  to="/profile"
+                  activeClassName="nav-link-active"
+                  className="nav-link-drop"
+                >
                   <span className="justify-between">Profile</span>
 
                   <span className="badge">New</span>
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <a>Settings</a>
+                <Link to="/profile" className="nav-link-drop">Settings</Link>
               </li>
-              <li onClick={handleLogout}>
-                <a>Logout</a>
+              <li>
+                <Link onClick={handleLogout} className="nav-link-drop">Logout</Link>
               </li>
             </ul>
           </div>
         ) : (
           <Link to="/login">
-            <button className="btn px-8  bg-[#1d4734] text-white border-green-900">
+            <button className="btn px-8  bg-[#1d4734] text-white border-green-900 hover:text-green-900">
               Login
             </button>
           </Link>

@@ -97,10 +97,10 @@ const Testimonial = () => {
 
   const isSmallScreen = window.innerWidth <= 768;
   return (
-    <div>
-      <div className="mb-5 mt-28 text-center">
+    <div className="font-montserrat">
+      <div className="mb-5 mt-28 text-center ">
         <h1 className="lg:text-xl text-sm font-bold animate__animated animate__backInRight">Portfolio</h1>
-        <h3 className="lg:text-5xl text-2xl font-bold animate__animated animate__backInLeft">What Our Clients Say</h3>
+        <h3 className="lg:text-5xl text-2xl font-poppins font-bold animate__animated animate__backInLeft">What Our Clients Say</h3>
       </div>
       <div className="lg:w-full w-[300px]  mx-auto h-[400px] flex flex-row items-center overflow-hidden gap-5 px-1 md:px-16 lg:px-5 mb-5">
         <div className="relative overflow-hidden">

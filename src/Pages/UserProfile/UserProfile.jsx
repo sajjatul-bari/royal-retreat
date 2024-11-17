@@ -80,7 +80,7 @@ const UserProfile = () => {
   };
 
   return (
-    <div>
+    <div className="font-montserrat">
       <div
         className="relative  text-white flex items-center justify-center pt-52 pb-24 "
         style={{
@@ -90,11 +90,11 @@ const UserProfile = () => {
         }}
       >
         <div className=" absolute inset-0 bg-black opacity-70"></div>
-        <h1 className="absolute lg:text-5xl text-2xl font-extrabold text-white uppercase">
+        <h1 className="absolute lg:text-5xl text-2xl font-extrabold text-white capitalize font-poppins">
           {user?.displayName || "User Profile"}
         </h1>
       </div>
-      <div className="pt-10 py-10 flex flex-col items-center">
+      <div className="pt-10 py-10 flex flex-col items-center px-2">
         {/* User Profile Photo */}
 
         <img
@@ -103,12 +103,12 @@ const UserProfile = () => {
           className="rounded-full w-32 h-32 mb-4"
           onError={(e) => (e.target.src = "https://via.placeholder.com/150")}
         />
-        <div className="text-2xl font-semibold text-center mt-2">
-          <h1>Name : {user.displayName}</h1>
+        <div className="lg:text-2xl text-lg font-semibold text-center mt- mb-6">
+          <h1 className="capitalize">Name : {user.displayName}</h1>
           <h1>Email: {user.email}</h1>
         </div>
         {/* Update Form */}
-        <form onSubmit={handleUpdate} className="w-1/2 flex flex-col gap-4">
+        <form onSubmit={handleUpdate} className="lg:w-1/2 w-full flex flex-col gap-4">
           <div className="form-control">
             <label className="label">Name:</label>
             <input
