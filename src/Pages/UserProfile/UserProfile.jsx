@@ -80,52 +80,66 @@ const UserProfile = () => {
   };
 
   return (
-    <div className="pt-36 py-10 flex flex-col items-center">
-      {/* User Profile Photo */}
-
-      <img
-        src={photo || "https://via.placeholder.com/150"} // Fallback to placeholder if no photo
-        alt={name || "User Profile"}
-        className="rounded-full w-32 h-32 mb-4"
-        onError={(e) => (e.target.src = "https://via.placeholder.com/150")}
-      />
-      <div className="text-2xl font-semibold mt-2">
-        <h1>Name : {user.displayName}</h1>
-        <h1>Email: {user.email}</h1>
-        <img src={user.photoURL} alt="" />
+    <div>
+      <div
+        className="relative  text-white flex items-center justify-center pt-52 pb-24 "
+        style={{
+          backgroundImage: "url('/slider/house.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className=" absolute inset-0 bg-black opacity-70"></div>
+        <h1 className="absolute lg:text-5xl text-2xl font-extrabold text-white uppercase">
+          {user?.displayName || "User Profile"}
+        </h1>
       </div>
-      {/* Update Form */}
-      <form onSubmit={handleUpdate} className="w-1/2 flex flex-col gap-4">
-        <div className="form-control">
-          <label className="label">Name:</label>
-          <input
-            type="text"
-            className="input input-bordered"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <div className="form-control">
-          <label className="label">Upload Photo:</label>
-          <input
-            type="file"
-            className="file-input file-input-bordered w-full"
-            onChange={handlePhotoUpload}
-          />
-        </div>
-        <button
-          type="submit"
-          className="btn btn-primary bg-green-900 hover:bg-transparent border hover:border-green-900 text-white hover:text-green-900"
-        >
-          Update Name
-        </button>
-      </form>
+      <div className="pt-10 py-10 flex flex-col items-center">
+        {/* User Profile Photo */}
 
-      {/* Status Messages */}
-      <div className="text-center mt-4">
-        {uploading && <p className="text-yellow-600">Uploading photo...</p>}
-        {successMsg && <p className="text-green-600">{successMsg}</p>}
-        {errorMsg && <p className="text-red-600">{errorMsg}</p>}
+        <img
+          src={photo || "https://via.placeholder.com/150"} // Fallback to placeholder if no photo
+          alt={name || "User Profile"}
+          className="rounded-full w-32 h-32 mb-4"
+          onError={(e) => (e.target.src = "https://via.placeholder.com/150")}
+        />
+        <div className="text-2xl font-semibold text-center mt-2">
+          <h1>Name : {user.displayName}</h1>
+          <h1>Email: {user.email}</h1>
+        </div>
+        {/* Update Form */}
+        <form onSubmit={handleUpdate} className="w-1/2 flex flex-col gap-4">
+          <div className="form-control">
+            <label className="label">Name:</label>
+            <input
+              type="text"
+              className="input input-bordered"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">Upload Photo:</label>
+            <input
+              type="file"
+              className="file-input file-input-bordered w-full"
+              onChange={handlePhotoUpload}
+            />
+          </div>
+          <button
+            type="submit"
+            className="btn btn-primary bg-green-900 hover:bg-transparent border hover:border-green-900 text-white hover:text-green-900"
+          >
+            Update Name
+          </button>
+        </form>
+
+        {/* Status Messages */}
+        <div className="text-center mt-4">
+          {uploading && <p className="text-yellow-600">Uploading photo...</p>}
+          {successMsg && <p className="text-green-600">{successMsg}</p>}
+          {errorMsg && <p className="text-red-600">{errorMsg}</p>}
+        </div>
       </div>
     </div>
   );

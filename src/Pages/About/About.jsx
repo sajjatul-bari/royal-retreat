@@ -21,30 +21,41 @@ const About = () => {
         </h1>
       </div>
       <div className="my-10 mx-10">
-        <p className="lg:texl-lg text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veniam
-          porro quidem, doloremque saepe alias corporis reiciendis sunt pariatur
-          sit. Cum impedit deleniti incidunt exercitationem suscipit. Labore ea
-          laudantium fugiat atque cumque impedit excepturi, ut fuga rem alias!
-          Ullam odit explicabo iste aspernatur eum accusantium. Laboriosam
-          consequuntur iste iure in harum blanditiis. Aliquam at fugit, culpa
-          temporibus laboriosam vero voluptates ex nisi doloremque possimus,
-          nemo maxime voluptatibus natus voluptas architecto animi veritatis
-          pariatur? Quos dicta laborum praesentium commodi explicabo ab quae
-          laudantium sunt eaque. Explicabo laborum, reprehenderit nihil tempore
-          consectetur harum perspiciatis quod doloribus iste ut eius ipsa totam
-          soluta? Quisquam, pariatur reprehenderit? Quis nesciunt voluptatem
-          consequuntur odio numquam ea perferendis quam libero dicta beatae
-          accusamus accusantium sit, voluptas in error ut. Soluta atque porro
-          minus alias quae sequi totam mollitia impedit voluptas cupiditate
-          necessitatibus sunt rerum laudantium eius excepturi saepe modi
-          similique, quo beatae accusantium illum minima sed deserunt quam!
-          Magni ad laborum iusto iste, numquam neque provident fuga? Voluptatum
-          vero possimus officia perspiciatis beatae quam sapiente. Aliquam
-          laborum non nostrum tenetur, blanditiis voluptatibus aspernatur
-          recusandae voluptates accusamus sint, doloremque quis ipsa doloribus
-          officiis quia velit eveniet ipsum mollitia facilis quos et eaque quam?
-          Quidem, quod eaque? Fugit, debitis.
+        <p className="lg:text-lg text-sm font-medium mb-2">
+          Royal Retreat is a trusted name in the real estate industry, renowned
+          for helping individuals and families find properties that perfectly
+          suit their lifestyle and aspirations. With a commitment to excellence
+          and personalized service, we specialize in offering a diverse range of
+          properties, from modern family homes to cozy countryside cottages,
+          ensuring every client finds their ideal living space.
+        </p>
+        <p className="lg:text-lg text-sm font-medium mb-2">
+          Our Modern Family Homes are designed to meet the needs of growing
+          families, blending contemporary architecture with functional layouts.
+          Located in vibrant and secure neighborhoods, these homes offer ample
+          space, state-of-the-art amenities, and a nurturing environment perfect
+          for raising children.
+        </p>
+        <p className="lg:text-lg text-sm font-medium mb-2">
+          For those who thrive in the heart of the city, our Downtown Apartments
+          provide an exceptional urban living experience. These properties
+          feature sleek interiors, prime locations, and convenient access to
+          cultural, dining, and business hubs, making them an ideal choice for
+          professionals and city enthusiasts.
+        </p>
+        <p className="lg:text-lg text-sm font-medium mb-2">
+          If you’re seeking peace and tranquility, our Cozy Cottages offer a
+          charming retreat surrounded by nature. These properties are
+          thoughtfully designed to provide a warm, inviting atmosphere, perfect
+          for those looking to escape the bustle of daily life and enjoy serene,
+          picturesque settings.
+        </p>
+        <p className="lg:text-lg text-sm font-medium mb-2">
+          At Royal Retreat, we understand that a home is more than just a place
+          to live—it’s where memories are made and dreams come to life. With our
+          expertise and dedication, we aim to make your journey to finding the
+          perfect home seamless and enjoyable. Let us help you discover your
+          dream property today!
         </p>
       </div>
       <ContactDetails></ContactDetails>

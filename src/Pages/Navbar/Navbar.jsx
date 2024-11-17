@@ -1,12 +1,15 @@
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import "../Navbar/Navbar.css";
 
 const Navbar = () => {
   const { user, LogOut } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
   const handleLogout = () => {
     LogOut();
+    navigate(location?.state ? location.state : "/");
   };
   const navLinks = (
     <>
@@ -41,7 +44,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar absolute bg-transparent z-10 text-white font-semibold px-10 py-3">
+    <div className="navbar absolute bg-transparent z-10 text-white font-semibold lg:px-10 px-3 py-3">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -62,11 +65,13 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          ></ul>
+            className="menu menu-sm dropdown-content bg-[#00000069] rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            {navLinks}
+          </ul>
         </div>
         <Link to="/">
-          <img className="h-24 " src="/logo.png" alt="" />
+          <img className="lg:h-20 h-16 " src="/logo.png" alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex bg-[#00000069] rounded-xl px-1">
@@ -82,8 +87,9 @@ const Navbar = () => {
             >
               <div className="w-10 rounded-full">
                 <img
+                  title={user.displayName}
                   alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  src={user.photoURL || "https://via.placeholder.com/150"}
                 />
               </div>
             </div>
