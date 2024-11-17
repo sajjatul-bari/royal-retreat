@@ -5,7 +5,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 
 const Register = () => {
-  const { createUser, googleLogin, githubLogin } = useContext(AuthContext);
+  const { createUser } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const [showName, setShowName] = useState({});

@@ -1,17 +1,21 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaGoogle, FaGithub } from "react-icons/fa6";
 import { IoEye, IoEyeOff } from "react-icons/io5";
+export const AuthUserData = createContext(null);
 
-const Login = () => {
+const Login = ({ children }) => {
   const { Login, googleLogin, githubLogin } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const [errorMsg, setErrorMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [user, setUser] = useState(null);
+
+  const authInfo = { user };
 
   const handleLogIn = (e) => {
     e.preventDefault();
@@ -25,6 +29,7 @@ const Login = () => {
     Login(email, password)
       .then((result) => {
         console.log(result.user);
+        setUser(result.user);
         setSuccessMsg("You have successfully Log in");
         navigate(location?.state ? location.state : "/");
       })
@@ -38,6 +43,7 @@ const Login = () => {
     googleLogin()
       .then((result) => {
         console.log(result);
+        setUser(result.user);
         setSuccessMsg("You have successfully Log in");
         navigate(location?.state ? location.state : "/");
       })
@@ -50,6 +56,7 @@ const Login = () => {
     githubLogin()
       .then((result) => {
         console.log(result);
+        setUser(result.user);
         setSuccessMsg("You have successfully Log in");
         navigate(location?.state ? location.state : "/");
       })
@@ -60,7 +67,9 @@ const Login = () => {
   };
   return (
     <div className="pt-36 py-10">
-      <h1 className="text-center text-4xl font-bold text-green-900">Please Login</h1>
+      <h1 className="text-center text-4xl font-bold text-green-900">
+        Please Login
+      </h1>
       <div className="hero">
         <div className="hero-content  lg:w-1/2">
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl pb-5">
@@ -137,6 +146,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <AuthUserData.Provider value={authInfo}>{children}</AuthUserData.Provider>
     </div>
   );
 };

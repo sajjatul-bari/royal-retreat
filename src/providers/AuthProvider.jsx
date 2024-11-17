@@ -10,7 +10,7 @@ import {
   signOut,
 } from "firebase/auth";
 import app from "../firebase.confiq";
-import { useLocation } from "react-router-dom";
+
 
 export const AuthContext = createContext(null);
 const auth = getAuth(app);

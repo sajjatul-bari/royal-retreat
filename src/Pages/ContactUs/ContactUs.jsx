@@ -9,7 +9,9 @@ import {
   IoLogoTwitter,
   IoLogoWhatsapp,
 } from "react-icons/io5";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
+const position = [51.505, -0.09];
 const ContactUs = () => {
   return (
     <div>
