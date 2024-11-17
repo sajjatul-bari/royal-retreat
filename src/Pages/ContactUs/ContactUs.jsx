@@ -27,13 +27,13 @@ const ContactUs = () => {
         }}
       >
         <div className=" absolute inset-0 bg-black opacity-70"></div>
-        <h1 className="absolute text-5xl font-extrabold text-white te">
+        <h1 className="absolute lg:text-5xl text-2xl font-extrabold text-white te">
           Contact Us
         </h1>
       </div>
-      <div className="flex mx-10 gap-5">
-        <div className=" w-1/2 my-10">
-          <div className="rounded-xl bg-white px-10 pb-10 pt-8 ">
+      <div className="flex lg:flex-row flex-col lg:mx-10 mx-2 gap-5">
+        <div className="lg:w-1/2 w-full lg:my-10 my-2">
+          <div className="rounded-xl bg-white lg:px-10 px-2 pb-10 pt-8 ">
             <div className="mb-6 space-y-2">
               <h2 className=" text-3xl font-semibold tracking-tight">
                 Let’s Talk!
@@ -86,7 +86,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className=" w-1/2 flex flex-col justify-evenly py-12 px-10 my-10 shadow-md bg-gray-100 rounded-xl">
+        <div className=" lg:w-1/2 w-full flex flex-col justify-evenly items-start  py-12 lg:px-10 px-5 my-10 shadow-md bg-gray-100 rounded-xl lg:space-y-0 space-y-8">
           <div className="flex items-start gap-3">
             <IoLocation className="text-4xl text-green-900"></IoLocation>
             <div>
@@ -109,7 +109,7 @@ const ContactUs = () => {
               <p className="text-lg">+8801842658767</p>
             </div>
           </div>
-          <div className="text-green-900 text-5xl flex justify-around">
+          <div className="text-green-900 text-5xl flex gap-8 justify-around">
             <IoLogoFacebook></IoLogoFacebook>
             <IoLogoInstagram></IoLogoInstagram>
             <IoLogoLinkedin></IoLogoLinkedin>
