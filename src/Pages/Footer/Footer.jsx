@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="lg:w-3/12 w-full flex flex-col lg:justify-normal justify-center lg:items-start items-center ">
             <img
               className="lg:h-40 h-32"
-              src="../../../public/logo.png"
+              src="/logo.png"
               alt=""
             />
             <div className="text-white text-3xl flex gap-5  mt-2">
