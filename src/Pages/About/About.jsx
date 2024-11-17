@@ -16,12 +16,12 @@ const About = () => {
         }}
       >
         <div className=" absolute inset-0 bg-black opacity-70"></div>
-        <h1 className="absolute text-5xl font-extrabold text-white">
+        <h1 className="absolute lg:text-5xl text-2xl font-extrabold text-white">
           About Us
         </h1>
       </div>
       <div className="my-10 mx-10">
-        <p className="texl-lg ">
+        <p className="lg:texl-lg text-sm">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veniam
           porro quidem, doloremque saepe alias corporis reiciendis sunt pariatur
           sit. Cum impedit deleniti incidunt exercitationem suscipit. Labore ea
