@@ -7,18 +7,18 @@ const AboutInfo = () => {
   return (
     <div className=" my-10 mx-10">
       <div className="my-20 text-center">
-        <h1 className="text-xl font-bold animate__animated animate__backInRight">About Us</h1>
-        <h3 className="text-5xl font-bold animate__animated animate__backInLeft">Where dream homes become reality</h3>
+        <h1 className="lg:text-xl text-sm font-bold animate__animated animate__backInRight">About Us</h1>
+        <h3 className="lg:text-5xl text-2xl font-bold animate__animated animate__backInLeft">Where dream homes become reality</h3>
       </div>
-      <div className="flex justify-center gap-10">
-        <div className="w-1/2">
+      <div className="flex justify-center lg:flex-row flex-col gap-10">
+        <div className="lg:w-1/2 w-full">
           <img
-            className="h-96 rounded-xl"
+            className="lg:h-96 h-80 rounded-xl"
             src="/images/10-min copy.jpg"
             alt=""
           />
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2 w-full">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
             laudantium reprehenderit minus, odio repudiandae laborum dicta vel

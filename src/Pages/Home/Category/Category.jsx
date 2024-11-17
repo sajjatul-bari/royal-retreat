@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Category = ({ resi }) => {
   const { id, estate_title, description, facilities, image } = resi;
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="card bg-base-100 lg:w-96 w-72 shadow-xl">
       <figure>
         <img src={image} alt="" />
       </figure>

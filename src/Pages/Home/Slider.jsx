@@ -29,7 +29,7 @@ const Slider = () => {
       >
         {/* First Slide */}
         <SwiperSlide
-          className="relative  text-white flex items-center justify-center lg:pt-64 pt-40"
+          className="relative  text-white flex items-center justify-center lg:pt-64 pt-40 lg:px-0 px-3"
           style={{
             backgroundImage: "url('/slider/house.jpg')",
             backgroundSize: "cover",
@@ -61,7 +61,7 @@ const Slider = () => {
 
         {/* Second Slide */}
         <SwiperSlide
-          className="relative h-screen text-white flex items-center justify-center lg:pt-64 pt-40"
+          className="relative h-screen text-white flex items-center justify-center lg:pt-64 pt-40 lg:px-0 px-3"
           style={{
             backgroundImage: "url('/slider/townhouse.jpg')",
             backgroundSize: "cover",
@@ -93,7 +93,7 @@ const Slider = () => {
 
         {/* third Slide */}
         <SwiperSlide
-          className="relative h-screen text-white flex items-center justify-center lg:pt-64 pt-40"
+          className="relative h-screen text-white flex items-center justify-center lg:pt-64 pt-40 lg:px-0 px-3"
           style={{
             backgroundImage: "url('/slider/apartment.jpg')",
             backgroundSize: "cover",
@@ -104,9 +104,11 @@ const Slider = () => {
           <div className="absolute inset-0 bg-black opacity-70"></div>
 
           <div className="relative text-center">
-            <div className="max-w-5xl mx-auto space-y-10">
-              <h1 className="mb-5 text-7xl font-extrabold">Cozy Cottage</h1>
-              <p className="mb-5 text-lg">
+            <div className="max-w-5xl mx-auto lg:space-y-10 space-y-3">
+              <h1 className="mb-5 lg:text-7xl text-2xl font-extrabold">
+                Cozy Cottage
+              </h1>
+              <p className="mb-5 lg:text-lg text-sm">
                 A charming cozy cottage with a stone exterior, wooden shutters,
                 and a quaint porch surrounded by lush greenery. Inside, warm
                 wooden beams, a fireplace, and soft, inviting decor create a
