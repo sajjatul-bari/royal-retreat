@@ -7,8 +7,8 @@ const Category = ({ resi }) => {
       <figure>
         <img src={image} alt="" />
       </figure>
-      <div className="card-body space-y-2">
-        <h2 className="card-title">
+      <div className="card-body space-y-2 font-montserrat font-medium">
+        <h2 className="card-title font-poppins">
           {estate_title}
           <div className="badge badge-secondary">NEW</div>
         </h2>

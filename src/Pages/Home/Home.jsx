@@ -19,9 +19,9 @@ const Home = () => {
       <Slider></Slider>
       <AboutInfo></AboutInfo>
       <div className="mt-32">
-        <div className="text-center mb-10">
-          <h1 className="lg:text-xl text-sm font-bold animate__animated animate__bounceIn">Our Services</h1>
-          <h3 className="lg:text-5xl text-2xl font-bold nimate__animated animate__bounceIn">
+        <div className="text-center mb-10 px-2">
+          <h1 className="lg:text-xl text-sm font-bold font-montserrat animate__animated animate__bounceIn">Our Services</h1>
+          <h3 className="lg:text-5xl text-2xl font-poppins font-bold nimate__animated animate__bounceIn">
             Ensuring a seamless experience from start to finish
           </h3>
         </div>

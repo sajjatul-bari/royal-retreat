@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer bg-black text-white lg:p-10 p-5 ">
+      <footer className="footer bg-black text-white lg:px-6 lg:py-10 p-5 font-montserrat ">
         <div className="flex lg:flex-row flex-col w-full lg:px-10 px-1 lg:space-y-0 space-y-10">
           <div className="lg:w-3/12 w-full flex flex-col lg:justify-normal justify-center lg:items-start items-center ">
             <img
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="lg:w-3/12 w-full lg:text-left text-center">
-            <h6 className="text-2xl font-semibold text-green-700 pb-5">
+            <h6 className="text-2xl font-semibold text-green-700 pb-5 font-poppins">
               Company
             </h6>
             <div className="flex flex-col gap-5 font-semibold">
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="lg:w-3/12 w-full lg:text-left text-center">
-            <h6 className="text-2xl font-semibold text-green-700 pb-5">
+            <h6 className="text-2xl font-poppins font-semibold text-green-700 pb-5">
               Services
             </h6>
             <div className="flex flex-col gap-5 font-semibold">
@@ -48,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="lg:w-3/12 w-full lg:space-y-5 space-y-3 lg:text-left text-center">
-            <h1 className="text-2xl">Get Subscribed Today!</h1>
+            <h1 className="text-2xl font-poppins font-semibold text-green-700 ">Get Subscribed Today!</h1>
             <p>
               Stay Updated! Sign up for our latest news, insights, and offers.
             </p>
