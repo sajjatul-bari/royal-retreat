@@ -2,7 +2,7 @@ import { IoLocation, IoMail, IoCall } from "react-icons/io5";
 
 const ContactDetails = () => {
   return (
-    <div className="flex lg:flex-row flex-col space-y-10 justify-evenly items-start bg-[#f9f9f9] py-12 px-10 my-10">
+    <div className="flex lg:flex-row flex-col space-y-10 justify-evenly lg:items-center items-start bg-[#f9f9f9] py-12 px-10 my-10">
       <div className="flex items-start gap-3">
         <IoLocation className="text-4xl text-green-900"></IoLocation>
         <div>
