@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "firebase": "^10.13.2",
+    "firebase": "^10.14.1",
     "leaflet": "^1.9.4",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
