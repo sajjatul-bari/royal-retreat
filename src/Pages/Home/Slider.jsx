@@ -41,17 +41,17 @@ const Slider = () => {
 
           <div className="relative text-center  ">
             <div className="max-w-4xl mx-auto lg:space-y-10 space-y-3">
-              <h1 className="mb-5 lg:text-7xl text-2xl font-extrabold">
+              <h1 className="mb-5 lg:text-7xl text-2xl font-poppins font-extrabold">
                 Modern Family Home
               </h1>
-              <p className="lg:text-lg text-sm">
+              <p className="lg:text-lg text-sm font-montserrat">
                 A modern house with a flat roof, sharp angles, and a mix of
                 concrete and metal finishes. Expansive floor-to-ceiling windows
                 flood the interior with natural light, highlighting the spacious
                 and functional open-plan layout.
               </p>
               <Link to="/category/1">
-                <button className="btn mt-10  bg-green-900 border-green-900 text-white hover:text-green-900">
+                <button className="btn mt-10 font-montserrat bg-green-900 border-green-900 text-white hover:text-green-900">
                   More Details
                 </button>
               </Link>
@@ -73,17 +73,17 @@ const Slider = () => {
 
           <div className="relative text-center">
             <div className="max-w-5xl mx-auto lg:space-y-10 space-y-3">
-              <h1 className="mb-5 lg:text-7xl text-2xl font-extrabold">
+              <h1 className="mb-5 lg:text-7xl text-2xl font-poppins font-extrabold">
                 Downtown Apartment
               </h1>
-              <p className="mb-5 lg:text-lg text-sm">
+              <p className="mb-5 lg:text-lg text-sm font-montserrat">
                 A chic downtown apartment featuring floor-to-ceiling windows
                 with stunning city views, modern fixtures, and an open-concept
                 living space. Sleek finishes like polished concrete floors and
                 stainless steel accents create a sophisticated urban vibe.
               </p>
               <Link to="/category/2">
-                <button className="btn mt-10 bg-green-900 border-green-900 text-white hover:text-green-900">
+                <button className="btn mt-10 font-montserrat bg-green-900 border-green-900 text-white hover:text-green-900">
                   More Details
                 </button>
               </Link>
@@ -105,17 +105,17 @@ const Slider = () => {
 
           <div className="relative text-center">
             <div className="max-w-5xl mx-auto lg:space-y-10 space-y-3">
-              <h1 className="mb-5 lg:text-7xl text-2xl font-extrabold">
+              <h1 className="mb-5 lg:text-7xl text-2xl font-poppins font-extrabold">
                 Cozy Cottage
               </h1>
-              <p className="mb-5 lg:text-lg text-sm">
+              <p className="mb-5 lg:text-lg text-sm font-montserrat">
                 A charming cozy cottage with a stone exterior, wooden shutters,
                 and a quaint porch surrounded by lush greenery. Inside, warm
                 wooden beams, a fireplace, and soft, inviting decor create a
                 peaceful, homey atmosphere.
               </p>
               <Link to="/category/3">
-                <button className="btn mt-10 bg-green-900 border-green-900 text-white hover:text-green-900">
+                <button className="btn mt-10 font-montserrat bg-green-900 border-green-900 text-white hover:text-green-900">
                   More Details
                 </button>
               </Link>

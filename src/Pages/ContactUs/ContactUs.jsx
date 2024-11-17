@@ -27,7 +27,7 @@ const ContactUs = () => {
         }}
       >
         <div className=" absolute inset-0 bg-black opacity-70"></div>
-        <h1 className="absolute lg:text-5xl text-2xl font-extrabold text-white te">
+        <h1 className="absolute lg:text-5xl text-2xl font-extrabold text-white font-poppins">
           Contact Us
         </h1>
       </div>
@@ -35,15 +35,15 @@ const ContactUs = () => {
         <div className="lg:w-1/2 w-full lg:my-10 my-2">
           <div className="rounded-xl bg-white lg:px-10 px-2 pb-10 pt-8 ">
             <div className="mb-6 space-y-2">
-              <h2 className=" text-3xl font-semibold tracking-tight">
+              <h2 className=" text-3xl font-semibold tracking-tight font-poppins">
                 Let’s Talk!
               </h2>
-              <p className=" text-sm text-zinc-500 dark:text-zinc-400">
+              <p className="font-montserrat lg:text-lg text-sm text-zinc-800 dark:text-zinc-800">
                 Get in touch with us using the enquiry form or contact details
                 below.
               </p>
             </div>
-            <form className="w-full space-y-6">
+            <form className="w-full space-y-6 font-montserrat">
               <div className="space-y-2 text-sm text-zinc-900">
                 <label className="block font-bold" htmlFor="name">
                   Name
@@ -87,29 +87,29 @@ const ContactUs = () => {
         </div>
 
         <div className=" lg:w-1/2 w-full flex flex-col justify-evenly items-start  py-12 lg:px-10 px-5 my-10 shadow-md bg-gray-100 rounded-xl lg:space-y-0 space-y-8">
-          <div className="flex items-start gap-3">
+          <div className="flex items-start justify-start gap-3">
             <IoLocation className="text-4xl text-green-900"></IoLocation>
             <div>
-              <h1 className="text-2xl font-bold">Our Location</h1>
-              <p className="text-lg">Dhaka, Bangladesh</p>
+              <h1 className="text-2xl font-bold font-poppins-">Our Location</h1>
+              <p className="text-lg font-montserrat">Dhaka, Bangladesh</p>
             </div>
           </div>
-          <div className="flex items-start gap-3">
+          <div className="flex items-start justify-start gap-3">
             <IoMail className="text-4xl text-green-900"></IoMail>
             <div>
-              <h1 className="text-2xl font-bold">Quick Contact</h1>
-              <p className="text-lg">Email : studiokolpona@outlook.com</p>
-              <p className="text-lg">Support : info@studiokolpona.com</p>
+              <h1 className="text-2xl font-bold font-poppins">Quick Contact</h1>
+              <p className="text-lg font-montserrat">Email : studiokolpona@outlook.com</p>
+              <p className="text-lg font-montserrat">Support : info@studiokolpona.com</p>
             </div>
           </div>
-          <div className="flex items-start gap-3">
+          <div className="flex items-start justify-start gap-3">
             <IoCall className="text-4xl text-green-900"></IoCall>
             <div>
-              <h1 className="text-2xl font-bold">Phone Number</h1>
-              <p className="text-lg">+8801842658767</p>
+              <h1 className="text-2xl font-bold font-poppins">Phone Number</h1>
+              <p className="text-lg font-montserrat">+8801842658767</p>
             </div>
           </div>
-          <div className="text-green-900 text-5xl flex gap-8 justify-around">
+          <div className="text-green-900 text-5xl flex lg:gap-8 gap-2 justify-around">
             <IoLogoFacebook></IoLogoFacebook>
             <IoLogoInstagram></IoLogoInstagram>
             <IoLogoLinkedin></IoLogoLinkedin>

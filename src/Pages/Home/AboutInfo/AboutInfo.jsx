@@ -6,10 +6,10 @@ const AboutInfo = () => {
   return (
     <div className=" my-10 mx-10">
       <div className="my-20 text-center">
-        <h1 className="lg:text-xl text-sm font-bold animate__animated animate__backInRight">
+        <h1 className="lg:text-xl text-sm font-bold animate__animated animate__backInRight font-montserrat">
           About Us
         </h1>
-        <h3 className="lg:text-5xl text-2xl font-bold animate__animated animate__backInLeft">
+        <h3 className="lg:text-5xl text-2xl font-bold animate__animated animate__backInLeft font-poppins">
           Where dream homes become reality
         </h3>
       </div>
@@ -21,7 +21,7 @@ const AboutInfo = () => {
             alt=""
           />
         </div>
-        <div className="lg:w-1/2 w-full">
+        <div className="lg:w-1/2 w-full font-montserrat">
           <p className="lg:text-lg font-medium text-sm">
             Royal Retreat is a trusted name in the real estate industry,
             renowned for helping individuals and families find properties that
@@ -34,9 +34,7 @@ const AboutInfo = () => {
           <p className="lg:text-lg font-medium text-sm mt-2">
             Our Modern Family Homes are designed to meet the needs of growing
             families, blending contemporary architecture with functional
-            layouts. Located in vibrant and secure neighborhoods, these homes
-            offer ample space, state-of-the-art amenities, and a nurturing
-            environment perfect for raising children.
+            layouts. Located in vibrant and secure neighborhoods...
           </p>
           <Link to="/about">
             <button className="btn rounded-xl bg-green-900 hover:bg-transparent border hover:border-green-900 text-white hover:text-green-900  mt-6">

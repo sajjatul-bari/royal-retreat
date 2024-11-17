@@ -67,13 +67,13 @@ const Login = ({ children }) => {
   };
   return (
     <div className="pt-36 py-10">
-      <h1 className="text-center text-4xl font-bold text-green-900">
+      <h1 className="text-center font-poppins text-4xl font-bold text-green-900">
         Please Login
       </h1>
-      <div className="hero">
-        <div className="hero-content  lg:w-1/2">
+      <div className="hero font-montserrat font-medium">
+        <div className="hero-content lg:w-1/2">
           <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl pb-5">
-            <form onSubmit={handleLogIn} className="card-body">
+            <form onSubmit={handleLogIn} className="card-body ">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -110,7 +110,7 @@ const Login = ({ children }) => {
                   </span>
                 </div>
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
+                  <a href="#" className="label-text-al link link-hover">
                     Forgot password?
                   </a>
                 </label>
